@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>POKEDEX  @Bridge4Billions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/pokedex.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/dataTables.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./static/js/dataTables.min.js"></script>   
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container" id="headerContainer">
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://twitter.com/bridge4billions?lang=es" target="_blank">POKEDEX @Bridge4Billions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="tableBlock" class="container ">
+        <div class="col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-4">
+            <table id="pokemonTable" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="select smallCol center">Sprite</th>
+                    </tr>
+                </thead> 
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="modal-title">Performing the API query</h4>
+                </div>
+
+                <div id="modal-body">
+                    <img id="loading" src="./static/img/loading.gif" alt="loading">
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <p>By Victor Peula for B4B</p>
+                    <p>Granada 2018 </p>
+                </div>                    
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./static/js/monsterSummaries.js"> </script>
+<script src="./static/js/pokedex.js"> </script>
+    
+</html>
